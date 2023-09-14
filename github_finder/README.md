@@ -1,27 +1,42 @@
-# React + TypeScript + Vite
+# GitHub User Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O GitHub User Search é um projeto que permite buscar usuários do GitHub e exibir seus dados através da API do GitHub. Utilizamos o TypeScript para tipar os dados e o React Router DOM para o controle de rotas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [React Router DOM](https://reactrouter.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [GitHub API](https://docs.github.com/en/rest)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Controle de Rotas
+
+Nossa aplicação utiliza o React Router DOM para o controle de rotas. Isso nos permite navegar entre diferentes páginas da aplicação de forma eficiente. Abaixo, descrevemos como as rotas estão configuradas em nosso projeto:
+
+### Rotas Principais
+
+- Rota da Página Inicial: Esta é a rota raiz da aplicação que exibe a página inicial. Ela é configurada para corresponder ao caminho `"/"`.
+
+```jsx
+<Route exact path="/" component={HomePage} />
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Pré-requisitos
+
+Para executar o projeto, você precisará ter as seguintes ferramentas instaladas em seu ambiente:
+
+- Node.js (versão X.X.X)
+- npm (gerenciador de pacotes)
+
+## Instalação
+
+Siga as etapas abaixo para configurar o ambiente de desenvolvimento:
+
+1. Clone este repositório:
+
+   ```shell
+   git clone https://github.com/cortezcodar/api-github.git
